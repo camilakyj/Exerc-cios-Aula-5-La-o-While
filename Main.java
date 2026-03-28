@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
+        Scanner entrada = new Scanner(System.in);
 
         double nota1, nota2, media;
 
@@ -13,7 +13,7 @@ public class Main {
 
             do {
                 System.out.print("Digite a primeira nota do aluno " + aluno + " (0 a 10): ");
-                nota1 = sc.nextDouble();
+                nota1 = entrada.nextDouble();
                 if (nota1 < 0 || nota1 > 10) {
                     System.out.println("Nota inválida! Tente novamente.");
                 }
@@ -22,7 +22,7 @@ public class Main {
 
             do {
                 System.out.print("Digite a segunda nota do aluno " + aluno + " (0 a 10): ");
-                nota2 = sc.nextDouble();
+                nota2 = entrada.nextDouble();
                 if (nota2 < 0 || nota2 > 10) {
                     System.out.println("Nota inválida! Tente novamente.");
                 }
@@ -35,6 +35,6 @@ public class Main {
             System.out.println("Média do aluno " + aluno + ": " + media + "\n");
         }
 
-        sc.close();
+        entrada.close();
     }
 }
